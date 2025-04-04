@@ -1,0 +1,82 @@
+.open-when-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff0f5;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 192, 203, 0.4);
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+.open-when-section h2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #d14c82;
+    margin-bottom: 30px;
+}
+
+.letter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.letter-buttons button {
+    background-color: #ffc1e3;
+    color: #5e2c5e;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.letter-buttons button:hover {
+    background-color: #f9a8d4;
+    transform: scale(1.05);
+}
+
+.letter-display {
+    margin-top: 20px;
+    position: relative;
+}
+
+.envelope {
+    background: #fff;
+    border: 2px dashed #f48fb1;
+    border-radius: 15px;
+    padding: 30px 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    min-height: 120px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.letter-content {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.5;
+    white-space: pre-line;
+    font-family: 'Georgia', serif;
+}
+
+.next-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff99cc; /* Warna pink aesthetic */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.next-button:hover {
+    background-color: #ff66a3; /* Warna lebih gelap saat di-hover */
+}

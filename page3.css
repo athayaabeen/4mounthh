@@ -1,0 +1,78 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffe6f2;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    color: #ff66a3;
+    margin-top: 30px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.journey-item {
+    width: 80%;
+    max-width: 500px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.journey-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.journey-item p {
+    margin-top: 10px;
+    color: #ff3385;
+}
+
+/* Styling untuk tulisan pemisah */
+.section-title {
+    margin: 40px 0;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.section-title h2 {
+    color: #ff66a3;
+    font-size: 24px;
+}
+
+.section-title p {
+    color: #ff3385;
+    font-style: italic;
+    font-size: 16px;
+}
+.next-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff99cc; /* Warna pink aesthetic */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.next-button:hover {
+    background-color: #ff66a3; /* Warna lebih gelap saat di-hover */
+}

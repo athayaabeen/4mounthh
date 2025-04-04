@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAB WEB</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="sab.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h3>Enter Your Password</h3>
+        <img src="raz1.jpeg" alt="Romantic Image" class="image">
+
+        <input type="password" id="passwordInput" readonly>
+
+        <div class="keypad">
+            <button onclick="addNumber(1)">1</button>
+            <button onclick="addNumber(2)">2</button>
+            <button onclick="addNumber(3)">3</button>
+            <button onclick="addNumber(4)">4</button>
+            <button onclick="addNumber(5)">5</button>
+            <button onclick="addNumber(6)">6</button>
+            <button onclick="addNumber(7)">7</button>
+            <button onclick="addNumber(8)">8</button>
+            <button onclick="addNumber(9)">9</button>
+            <button onclick="clearInput()">DELETE</button>
+            <button onclick="addNumber(0)">0</button>
+            <button class="enter" onclick="checkPassword()">ENTER</button>
+        </div>
+        <audio controls>
+            <source src="Old Love - Yuji  Putri Dahlia (Official Lyrics Video).mp3" type="audio/mp3">
+        </audio>
+    </div>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let audio = document.getElementById("bg-music");
+        let currentPage = window.location.href; // Ambil URL halaman sekarang
+    
+        // Cek apakah halaman ini halaman 3 atau 4
+        if (currentPage.includes("page3.html") || currentPage.includes("page4.html")) {
+            if (!sessionStorage.getItem("musicPlayed")) {
+                audio.volume = 0.5; // Atur volume biar gak terlalu kencang
+                let playPromise = audio.play();
+    
+                if (playPromise !== undefined) {
+                    playPromise.catch(() => {
+                        console.log("Autoplay blocked, user interaction needed.");
+                    });
+                }
+    
+                sessionStorage.setItem("musicPlayed", "true");
+            }
+        } else {
+            // Stop musik kalau pindah ke halaman lain
+            audio.pause();
+            sessionStorage.removeItem("musicPlayed");
+        }
+    });
+    </script> 
+</body>
+</html>

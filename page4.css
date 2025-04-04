@@ -1,0 +1,51 @@
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #ffe6f2;
+    text-align: center;
+    padding: 50px;
+    color: #ff3385;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #ff66a3;
+}
+
+.special-message {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.letter {
+    font-size: 18px;
+    text-align: left;
+    border-left: 4px solid #ff66a3;
+    padding-left: 10px;
+    min-height: 100px;
+}
+
+.next-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff99cc; /* Warna pink aesthetic */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.next-button:hover {
+    background-color: #ff66a3; /* Warna lebih gelap saat di-hover */
+}
